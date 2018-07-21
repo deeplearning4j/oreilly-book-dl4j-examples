@@ -101,11 +101,11 @@
             <artifactId>${nd4j.backend}</artifactId>
         </dependency>
 
-		<!-- java9 compatible version of lombok -->
+        <!-- java9 compatbile version of lombok -->
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
-            <version>1.16.18</version>
+            <version>${lombok.version}</version>
         </dependency>
 
 

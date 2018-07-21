@@ -30,7 +30,7 @@
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
-            <version>1.16.18</version>
+            <version>${lombok.version}</version>
         </dependency>
 
         <!-- Copy this into your own projects (without the comment block around it), for CPU operations-->
