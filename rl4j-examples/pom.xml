@@ -68,6 +68,12 @@
             <groupId>org.deeplearning4j</groupId>
             <artifactId>rl4j-core</artifactId>
             <version>${rl4j.version}</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.projectlombok</groupId>
+                    <artifactId>lombok</artifactId>
+                </exclusion>
+            </exclusions>
         </dependency>
         <dependency>
             <groupId>org.deeplearning4j</groupId>
@@ -85,6 +91,14 @@
             <artifactId>logback-classic</artifactId>
             <version>${logback.version}</version>
         </dependency>
+
+        <!-- java9 compatbile version of lombok -->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.16.18</version>
+        </dependency>
+
     </dependencies>
 
     <build>

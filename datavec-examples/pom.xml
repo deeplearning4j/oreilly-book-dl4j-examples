@@ -21,6 +21,18 @@
             <groupId>org.datavec</groupId>
             <artifactId>datavec-api</artifactId>
             <version>${datavec.version}</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.projectlombok</groupId>
+                    <artifactId>lombok</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.16.18</version>
         </dependency>
 
         <dependency>

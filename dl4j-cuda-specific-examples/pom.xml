@@ -79,6 +79,12 @@
             <groupId>org.deeplearning4j</groupId>
             <artifactId>deeplearning4j-core</artifactId>
             <version>${dl4j.version}</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.projectlombok</groupId>
+                    <artifactId>lombok</artifactId>
+                </exclusion>
+            </exclusions>
         </dependency>
         <dependency>
             <groupId>org.deeplearning4j</groupId>
@@ -94,6 +100,15 @@
             <groupId>org.nd4j</groupId>
             <artifactId>${nd4j.backend}</artifactId>
         </dependency>
+
+		<!-- java9 compatible version of lombok -->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.16.18</version>
+        </dependency>
+
+
     </dependencies>
 
     <build>

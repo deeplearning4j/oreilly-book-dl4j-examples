@@ -43,6 +43,12 @@
             <groupId>org.deeplearning4j</groupId>
             <artifactId>deeplearning4j-core</artifactId>
             <version>${dl4j.version}</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.projectlombok</groupId>
+                    <artifactId>lombok</artifactId>
+                </exclusion>
+            </exclusions>
         </dependency>
 
         <!-- Force guava versions for using Arbiter UI -->
@@ -58,6 +64,14 @@
             <artifactId>arbiter-deeplearning4j</artifactId>
             <version>${arbiter.version}</version>
         </dependency>
+
+        <!-- java9 compatbile version of lombok -->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.16.18</version>
+        </dependency>
+
     </dependencies>
 
     <build>
