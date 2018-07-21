@@ -25,6 +25,19 @@
             <groupId>org.nd4j</groupId>
             <artifactId>nd4j-native-platform</artifactId>
             <version>${nd4j.version}</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.projectlombok</groupId>
+                    <artifactId>lombok</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+
+		<!-- java9 comptabible version of lombok -->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.16.18</version>
         </dependency>
 
         <dependency>
@@ -32,6 +45,10 @@
             <artifactId>dl4j-spark_${scala.binary.version}</artifactId>
             <version>${dl4j.version}</version>
             <exclusions>
+                <exclusion>
+                    <groupId>org.projectlombok</groupId>
+                    <artifactId>lombok</artifactId>
+                </exclusion>
                 <exclusion>
                     <artifactId>spark-core_2.10</artifactId>
                     <groupId>org.apache.spark</groupId>
